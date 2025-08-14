@@ -28,25 +28,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   margin-bottom: 30px;
 }
 
-.link-social {
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #fe6102;
-  color: white;
-  cursor: pointer;
-  a {
-    text-decoration: none;
-  }
-  &:hover {
-    background-color: #fe6302ca;
-
-    color: $gray;
-  }
-}
 .perfilInfo {
   display: flex;
   flex-direction: column;

@@ -1,3 +1,31 @@
+@use "../../../styles/variables" as *;
+
 .container {
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  min-height: 100vh; // ocupa a altura total da tela
+}
+
+.projetos-pessoais {
+  width: 100%;
+  max-width: $maxWidthContainer;
+  display: flex;
+  flex-direction: column;
+}
+
+.projetos {
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.botao {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
+  margin: 0 auto;
 }

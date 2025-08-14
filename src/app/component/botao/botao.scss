@@ -1,0 +1,22 @@
+@use "../../../styles/variables" as *;
+.link-social {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fe6102;
+
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  &:hover {
+    background-color: #fe6302ca;
+
+    a {
+      text-decoration: none;
+      color: rgb(217, 213, 213);
+    }
+  }
+}

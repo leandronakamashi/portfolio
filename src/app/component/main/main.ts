@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Botao } from '../botao/botao';
 
 @Component({
   selector: 'app-main',
-  imports: [],
+  imports: [Botao],
   templateUrl: './main.html',
   styleUrl: './main.scss',
 })
