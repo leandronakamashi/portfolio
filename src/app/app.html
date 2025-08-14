@@ -1,0 +1,22 @@
+<div class="container">
+  <app-header></app-header>
+  <app-main></app-main>
+  <app-info-tecnologias></app-info-tecnologias>
+  @if (componentAtivo === 'sobre') {
+  <app-sobre></app-sobre>
+  } @else if (componentAtivo === 'tecnologias') {
+  <app-tecnologias></app-tecnologias>
+  } @else if (componentAtivo === 'projetos') {
+  <app-projetos></app-projetos>
+  } @else if (componentAtivo === 'contato') {
+  <app-contato></app-contato>
+  }
+
+  <app-footer
+    (sobreClick)="componentAtivo = 'sobre'"
+    (tecnologiasClick)="componentAtivo = 'tecnologias'"
+    (projetosClick)="componentAtivo = 'projetos'"
+    (contatoClick)="componentAtivo = 'contato'"
+  ></app-footer>
+</div>
+<router-outlet />

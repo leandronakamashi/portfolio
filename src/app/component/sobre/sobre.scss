@@ -1,0 +1,15 @@
+@use "../../../styles/variables" as *;
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: $marginContainer;
+  margin-bottom: 100px;
+}
+.sobre {
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+
+  color: $gray-dark;
+}
